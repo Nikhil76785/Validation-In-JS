@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <h1>Validation In JavaScript</h1>
+        <form name="myForm" onsubmit="myfunc()">
+            Name: <input type="text" name="f_name"><br>
+           
+            <button type="submit">Submit The Form!</button>
+        </form>
+
+        <script>
+
+            function myfunc(){
+            var n = document.forms ["myForm"] ["f_name"].value;
+
+            if (n == "") {
+                alert("Enter your Name!")
+            }
+
+            else{
+                alert("Submission Successful!")
+            }
+        }
+
+        </script>
+    </body>
+</html>
